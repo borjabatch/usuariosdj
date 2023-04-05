@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <title>Índice</title>
+</head>
+<body>
+    <h1>Panel de usuario</h1>
+    <h3>Bienvenido: {{ user }}</h3>
+    <ul>
+        <li><a href="{% url 'users_app:user-logout' %}">Cerrar sesión</a></li>
+        <li><a href="{% url 'users_app:user-update' %}">Actualizar datos</a></li>
+    </ul>
+</body>
+</html>
